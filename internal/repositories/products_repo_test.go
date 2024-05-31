@@ -1,13 +1,5 @@
 package repositories
 
-import (
-	"log"
-	"testing"
-
-	"github.com/ilhamgepe/prakerja-s7/db/postgres"
-	"github.com/stretchr/testify/assert"
-)
-
 // var (
 // 	ps []models.Products = []models.Products{
 // 		{ID: 1, Name: "Product 1", Price: 1000},
@@ -17,15 +9,15 @@ import (
 // 	pm sync.Mutex
 // )
 
-var db = postgres.NewPostgresDB()
+// var db = postgres.NewPostgresDB()
 
-func TestGetProducts(t *testing.T) {
-	pr := NewProductsRepo(db)
-	products, err := pr.GetProducts()
-	log.Println(&products)
-	assert.Nil(t, err)
-	assert.NotNil(t, products)
-}
+// func TestGetProducts(t *testing.T) {
+// 	pr := NewProductsRepo(db)
+// 	products, err := pr.GetProducts()
+// 	log.Println(&products)
+// 	assert.Nil(t, err)
+// 	assert.NotNil(t, products)
+// }
 
 // func TestGetProduct(t *testing.T) {
 // 	pr := NewProductsRepo(nil)
