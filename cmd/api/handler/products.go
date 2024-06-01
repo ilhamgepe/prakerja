@@ -4,7 +4,6 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"log"
 	"net/http"
 	"strconv"
 
@@ -151,7 +150,6 @@ func (ph *ProductHandler) UpdateProduct(ctx *gin.Context) {
 }
 
 func (ph *ProductHandler) DeleteProduct(ctx *gin.Context) {
-	log.Println("MEMEMEMEMEMEMMEK")
 	id := ctx.Param("id")
 	iduint64, err := strconv.ParseUint(id, 10, 64)
 	if err != nil {
